@@ -380,6 +380,7 @@ struct sharedObjectsStruct {
     *integers[REDIS_SHARED_INTEGERS];
 };
 
+/* Use multiple worker threads to serve client requests */
 /* Global server state structure */
 struct redisServer {
     pthread_t mainthread;
